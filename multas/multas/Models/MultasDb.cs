@@ -19,6 +19,10 @@ namespace multas.Models
         public virtual DbSet<Condutores> Condutores { get; set; }
         public virtual DbSet<Viaturas> Viaturas { get; set; }
         public virtual DbSet<Agentes> Agentes{ get; set; }
+        /// <summary>
+        /// configura a forma como as tabelas sao criadas
+        /// </summary>
+        /// <param name="modelBuilder">referencia o objecto gerador da base de dados</param>
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
